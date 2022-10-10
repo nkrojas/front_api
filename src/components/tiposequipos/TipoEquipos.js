@@ -42,13 +42,14 @@ export default function TipoEquipos() {
   }
 
   const guardarTipoEquipo = async () =>{
+    console.log('gola')
     setLoading(true)
     try{
       const res = await crearTipoEquipo(tipoEquipo)
       console.log(res)
       setLoading(true)
       setTipoEquipo({nombre: ''})
-      listTipoEquipos()
+      //listTipoEquipos()
     }catch (e){
       const {status, data} = e.response;
       // if(status ==400){

@@ -9,6 +9,7 @@ export default function Modal({
 
   const guardarElement = (e) =>{
     e.prevenDefault();
+    console.log(e)
     guardar()
   }
   
